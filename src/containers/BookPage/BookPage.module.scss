@@ -1,0 +1,88 @@
+@import "./../../assets/styles/modules/theme.module";
+
+.BookPage {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 10vh;
+
+  &_Img{
+    width: 30%;
+    object-fit: contain;
+  }
+
+  &_Info {
+    max-width: 50%;
+    padding: 2em;
+
+    h2 {
+      font-family: $title-font;
+      font-size: 3em;
+    }
+
+    h4 {
+      font-family: $main-font-family;
+      font-size: 1.2rem;
+      padding: 10px 0; 
+      border-bottom: 2px solid $secondary-clr;
+      margin: 10px 0;
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: $accent-clr;
+      padding: 10px;
+      color: white;
+      border-radius: 0 0 10px 10px;
+
+      &:hover {
+        box-shadow: 3px 3px $primary-clr;
+        
+      }
+
+      &:active {
+        box-shadow: none;
+        transform: translate(3px, 3px);
+      }
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.4em;
+      margin: 10px 0;
+    }
+    
+    &_Desc {
+      font-weight: 700;
+      text-decoration: underline;
+      padding-top: 20px;
+    }
+  }
+}
+
+.ExtraInfo {
+  border-top: 1px solid $secondary-clr;
+  margin: 3em;
+  padding: 1.5em 1em;
+
+  p {
+    padding: 5px;
+  }
+}
+
+.NoBook {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 10vh - 50px);
+
+  p {
+    font-family: $title-font;
+    font-size: 3em;
+    text-shadow: 5px 5px 5px rgba($accent-clr, 0.5);
+    padding: 20px
+  }
+}

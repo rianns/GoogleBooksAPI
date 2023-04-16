@@ -1,0 +1,34 @@
+@import "./../../assets/styles/modules/theme.module";
+
+.SearchBar {
+  width: 60vw;
+  height: 30px;
+  display: flex;
+
+  &_Input {
+    font-family: $main-font-family;
+    height: 100%;
+    font-size: 18px;
+    width: 80%;
+    padding-left: 10px;
+  }
+  &_Btn {
+    cursor: pointer;
+    font-family: $main-font-family;
+    background-color: $primary-clr;
+    color: white;
+    border: none;
+    height: 100%;
+    width: 20%;
+    border-radius: 0 5px 5px 0;
+
+    &:hover {
+      box-shadow: 5px 2px $accent-clr;
+    }
+
+    &:active {
+      box-shadow: none;
+      transform: translate(5px, 2px);
+    }
+  }
+}

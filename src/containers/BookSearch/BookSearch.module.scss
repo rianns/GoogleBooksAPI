@@ -1,0 +1,18 @@
+.BookSearch {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+
+  &_Query {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+
+  &_SearchBar {
+    margin: 30px auto;
+  }
+  &_BookList {
+    width: 90vw;
+  }
+}

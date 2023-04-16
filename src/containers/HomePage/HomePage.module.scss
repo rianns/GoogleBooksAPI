@@ -1,0 +1,7 @@
+.HomePage {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 10vh - 50px);
+}

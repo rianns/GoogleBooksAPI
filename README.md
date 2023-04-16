@@ -1,2 +1,3 @@
 ### GoogleBooksAPI
-Search Google database for certain books
+
+Search Google database for books using a query
